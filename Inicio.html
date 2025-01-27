@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Passion | Tu Portal de Fórmula 1</title>
+    <link rel="stylesheet" href="css/inicio.css">
+   
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">DonBosco<span class="f1-accent">Style</span></div>
+            <button class="menu-button">☰</button>
+            <div class="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#pilotos">Pilotos</a>
+                <a href="#equipos">Equipos</a>
+                <a href="#calendario">Calendario</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Vive un poco de la f1</h1>
+            <p>Tu portal favorito para seguir la F1</p>
+        </div>
+    </section>
+
+    <section class="content-grid">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img/Pistas.jpg" alt="Últimas Carreras">
+                <div class="grid-content">
+                    <h3>Últimas Carreras</h3>
+                    <p>Revive los momentos más emocionantes de los últimos Grandes Premios y análisis detallados.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img/Pilotos.jpg" alt="Pilotos">
+                <div class="grid-content">
+                    <h3>Pilotos 2025</h3>
+                    <p>Conoce a las estrellas que luchan por el campeonato mundial esta temporada.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img/marcas.jpg" alt="Equipos">
+                <div class="grid-content">
+                    <h3>Equipos</h3>
+                    <p>Explora los detalles técnicos y las últimas actualizaciones de cada escudería.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer class="footer">
+        <p>© 2025 F1 Passion. Tu portal de Fórmula 1</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
